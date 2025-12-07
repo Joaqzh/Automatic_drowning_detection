@@ -1,0 +1,13 @@
+# ByteTrack tracker config for Ultralytics
+tracker_type: bytetrack
+track_high_thresh: 0.6
+track_low_thresh: 0.1
+new_track_thresh: 0.7
+track_buffer: 60         # <- Aquí aumentas tolerancia a ausencias
+match_thresh: 0.6
+gmc: False
+do_reid: False
+with_reid: False
+fuse_score: True         # <- <=== ESTE parámetro evita tu error actual
+appearance_features: False
+frame_rate: 30
